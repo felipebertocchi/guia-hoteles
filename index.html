@@ -1,196 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<html lang="es">
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/main.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Guia de Hoteles</title>
-  </head>
-  <body>
-    <div class="jumbotron">
-      <h1 class="display-4">Guía de Hoteles</h1>
-      <p class="lead">
-        Encuentra las mejores habitaciones en exoticos lugares al mejor precio
-      </p>
-      <hr class="my-4" />
-      <p>Buscá una ciudad, hotel o hasta un lugar famoso</p>
-      <a class="btn btn-warning btn-lg" href="#" role="button">Empezar</a>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <title>Guia de Hoteles</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a href="index.html" class="navbar-brand href">Guía Hoteles</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Precios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">T&C</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <div class="jumbotron">
+    <h1 class="display-4">Guía de Hoteles</h1>
+    <p class="lead">
+      Encuentra las mejores habitaciones en exoticos lugares al mejor precio
+    </p>
+    <hr class="my-4" />
+    <p>Buscá una ciudad, hotel o hasta un lugar famoso</p>
+    <a class="btn btn-warning btn-lg" href="#" role="button">Empezar</a>
+  </div>
 
-    <div class="album py-5 bg-light"></div>
+  <div class="album py-5 bg-light">
 
-      <div class="container">
-        <div class="d-flex flex-wrap"> 
-          <div class="card-hotel">
-            <div class="card mb-4 shadow-sm">
-              <img src="https://thumbnails.trvl-media.com/-gRoTNrDtsf0KmFovp5hjnubQrk=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/17000000/16210000/16208000/16207935/f260cdc8_z.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Hipotels Gran Playa de Palma</h5>
-                <p class="card-text text-justify">Ubicado en Palma de Mallorca, Hipotels Gran Playa de Palma se encuentra a un breve trayecto conduciendo del Palma Aquarium, así como de la bahía de Palma. También cuenta con masajes, una sauna y una piscina al aire libre.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-primary custom" data-toggle="button">
-                      <i class="far fa-bookmark"></i>
-                    </button>  
-                  </div>
-                  <a href="#" class="card-link">Ver más</a>
-                  <button type="button" class="btn btn-success">Reservar</button>
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active">Home</li>
+        </ol>
+      </nav>
+      <div class="d-flex flex-wrap">
+        <div class="card-hotel">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://thumbnails.trvl-media.com/-gRoTNrDtsf0KmFovp5hjnubQrk=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/17000000/16210000/16208000/16207935/f260cdc8_z.jpg"
+              class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Hipotels Gran Playa de Palma</h5>
+              <p class="card-text text-justify">Ubicado en Palma de Mallorca, Hipotels Gran Playa de Palma se encuentra
+                a
+                un breve trayecto conduciendo del Palma Aquarium, así como de la bahía de Palma. También cuenta con
+                masajes, una sauna y una piscina al aire libre.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-danger custom" data-toggle="button">
+                    <i class="far fa-bookmark"></i>
+                  </button>
                 </div>
+                <a href="#" class="card-link">Ver más</a>
+                <button type="button" class="btn btn-success">Reservar</button>
               </div>
             </div>
           </div>
-          
-          <div class="card-hotel">
-            <div class="card mb-4 shadow-sm">
-              <img src="https://media.radissonhotels.net/image/radisson-blu-hotel-reussen-andermatt/poolindoor/16256-117386-f64636672_3xl.jpg?impolicy=SecondGalleryImg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Radisson Blu Hotel Reussen</h5>
-                <p class="card-text text-justify">El Radisson Blu Hotel Reussen está ubicado en Andermatt, a 1,1 km
-                  del puente del Diablo, y ofrece alojamiento, restaurante,
-                  estacionamiento privado, centro de fitness y bar.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    </button>
-                    <button type="button" class="btn btn-sm btn-outline-primary custom" data-toggle="button">
-                      <i class="far fa-bookmark"></i>
-                    </button>  
-                  </div>
-                  <a href="#" class="card-link">Ver más</a>
-                  <button type="button" class="btn btn-success">Reservar</button>
+        </div>
+
+        <div class="card-hotel">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://media.radissonhotels.net/image/radisson-blu-hotel-reussen-andermatt/poolindoor/16256-117386-f64636672_3xl.jpg?impolicy=SecondGalleryImg"
+              class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Radisson Blu Hotel Reussen</h5>
+              <p class="card-text text-justify">El Radisson Blu Hotel Reussen está ubicado en Andermatt, a 1,1 km
+                del puente del Diablo, y ofrece alojamiento, restaurante,
+                estacionamiento privado, centro de fitness y bar.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger custom" data-toggle="button">
+                    <i class="far fa-bookmark"></i>
+                  </button>
                 </div>
+                <a href="#" class="card-link">Ver más</a>
+                <button type="button" class="btn btn-success">Reservar</button>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="card-hotel">
-            <div class="card mb-4 shadow-sm">
-              <img src="https://cf.bstatic.com/images/hotel/max1280x900/167/167869878.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Copenhagen Island Hotel</h5>
-                <p class="card-text text-justify">Este hotel, moderno y elegante, está en una isla artificial del
-                  centro de Copenhague, al lado del centro comercial Fisketorvet.
-                  Ofrece, de forma gratuita, conexión Wi-Fi, un gimnasio y un sauna.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    </button>
-                    <button type="button" class="btn btn-sm btn-outline-primary custom" data-toggle="button">
-                      <i class="far fa-bookmark"></i>
-                    </button>  
-                  </div>
-                  <a href="#" class="card-link">Ver más</a>
-                  <button type="button" class="btn btn-success">Reservar</button>
+        <div class="card-hotel">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://cf.bstatic.com/images/hotel/max1280x900/167/167869878.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Copenhagen Island Hotel</h5>
+              <p class="card-text text-justify">Este hotel, moderno y elegante, está en una isla artificial del
+                centro de Copenhague, al lado del centro comercial Fisketorvet.
+                Ofrece, de forma gratuita, conexión Wi-Fi, un gimnasio y un sauna.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger custom" data-toggle="button">
+                    <i class="far fa-bookmark"></i>
+                  </button>
                 </div>
+                <a href="#" class="card-link">Ver más</a>
+                <button type="button" class="btn btn-success">Reservar</button>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="card-hotel">
-            <div class="card mb-4 shadow-sm">
-              <img src="https://images.trvl-media.com/hotels/1000000/20000/15300/15237/0f02afd9.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Luxor Hotel and Casino</h5>
-                <p class="card-text text-justify">El Luxor, famoso por su emblemática forma piramidal, está situado en la zona del Strip de Las Vegas y ofrece entretenimiento en directo y un casino. Ofrece un spa de servicio completo, 4 piscinas grandes de temporada y una bañera de hidromasaje.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    </button>
-                    <button type="button" class="btn btn-sm btn-outline-primary custom" data-toggle="button">
-                      <i class="far fa-bookmark"></i>
-                    </button>  
-                  </div>
-                  <a href="#" class="card-link">Ver más</a>
-                  <button type="button" class="btn btn-success">Reservar</button>
+        <div class="card-hotel">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://images.trvl-media.com/hotels/1000000/20000/15300/15237/0f02afd9.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+              class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Luxor Hotel and Casino</h5>
+              <p class="card-text text-justify">El Luxor, famoso por su emblemática forma piramidal, está situado en la
+                zona del Strip de Las Vegas y ofrece entretenimiento en directo y un casino. Ofrece un spa de servicio
+                completo, 4 piscinas grandes de temporada y una bañera de hidromasaje.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger custom" data-toggle="button">
+                    <i class="far fa-bookmark"></i>
+                  </button>
                 </div>
+                <a href="#" class="card-link">Ver más</a>
+                <button type="button" class="btn btn-success">Reservar</button>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="card-hotel">
-            <div class="card mb-4 shadow-sm">
-              <img src="https://images.trvl-media.com/hotels/19000000/18730000/18723300/18723252/0c77d9d8.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">San Francisco Proper Hotel</h5>
-                <p class="card-text text-justify">Además de un restaurante, este hotel para no fumadores cuenta con 2 bares o salas y un gimnasio abierto las 24 horas. La conexión wifi en las zonas comunes es gratuita. Otras instalaciones incluyen una terraza en la azotea, aparcamiento con asistencia y servicio de habitaciones las 24 horas.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    </button>
-                    <button type="button" class="btn btn-sm btn-outline-primary custom" data-toggle="button">
-                      <i class="far fa-bookmark"></i>
-                    </button>  
-                  </div>
-                  <a href="#" class="card-link">Ver más</a>
-                  <button type="button" class="btn btn-success">Reservar</button>
+        <div class="card-hotel">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://images.trvl-media.com/hotels/19000000/18730000/18723300/18723252/0c77d9d8.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+              class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">San Francisco Proper Hotel</h5>
+              <p class="card-text text-justify">Además de un restaurante, este hotel para no fumadores cuenta con 2
+                bares
+                o salas y un gimnasio abierto las 24 horas. La conexión wifi en las zonas comunes es gratuita. Otras
+                instalaciones incluyen una terraza en la azotea, aparcamiento con asistencia y servicio de habitaciones
+                las 24 horas.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger custom" data-toggle="button">
+                    <i class="far fa-bookmark"></i>
+                  </button>
                 </div>
+                <a href="#" class="card-link">Ver más</a>
+                <button type="button" class="btn btn-success">Reservar</button>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="card-hotel">
-            <div class="card mb-4 shadow-sm">
-              <img src="https://images.trvl-media.com/hotels/1000000/10000/2800/2722/18823162.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Apollo Hotel Amsterdam</h5>
-                <p class="card-text text-justify">Se encuentra en Ámsterdam, en la zona de Ámsterdam Sur, que está en el centro y a orillas del agua. Además de visitar lugares emblemáticos como Plaza de los Museos y Plaza Dam, si lo tuyo son las compras no te pierdas Mercado de Albert Cuyp y Mercado de las flores.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    </button>
-                    <button type="button" class="btn btn-sm btn-outline-primary custom" data-toggle="button">
-                      <i class="far fa-bookmark"></i>
-                    </button>  
-                  </div>
-                  <a href="#" class="card-link">Ver más</a>
-                  <button type="button" class="btn btn-success">Reservar</button>
+        <div class="card-hotel">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://images.trvl-media.com/hotels/1000000/10000/2800/2722/18823162.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+              class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Apollo Hotel Amsterdam</h5>
+              <p class="card-text text-justify">Se encuentra en Ámsterdam, en la zona de Ámsterdam Sur, que está en el
+                centro y a orillas del agua. Además de visitar lugares emblemáticos como Plaza de los Museos y Plaza
+                Dam,
+                si lo tuyo son las compras no te pierdas Mercado de Albert Cuyp y Mercado de las flores.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger custom" data-toggle="button">
+                    <i class="far fa-bookmark"></i>
+                  </button>
                 </div>
+                <a href="#" class="card-link">Ver más</a>
+                <button type="button" class="btn btn-success">Reservar</button>
               </div>
             </div>
           </div>
-
         </div>
 
       </div>
 
     </div>
 
-    <script src="https://kit.fontawesome.com/344d15d4e3.js" crossorigin="anonymous"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </div>
 
-    <footer>
-      <div class="d-flex flex-wrap justify-content-around">
-        <div class="d-flex flex-column custom-foot">
-          <h5>Redes Sociales</h5>
-          <a href="https://www.facebook.com/">Facebook</a>
-          <a href="https://www.instagram.com/">Instagram</a>
-          <a href="https://www.twitter.com/">Twitter</a>
-        </div>
-        <div class="d-flex flex-column text-center custom-foot">
-          <address>
-            <h5>Oficina Central</h5>
-            <p>Tucuman 834, CABA, Argentina</p>
-            <p>+54 9 11 4628-5925</p>
-            <p>contacto@guiahoteles.com</p>
-          </address>
-        </div>
-        <div class="d-flex flex-column align-items-end custom-foot">
-          <a href="#">Quienes Somos</a>
-          <a href="#">Precios</a>
-          <a href="#">Términos y Condiciones</a>
-          <a href="#">Contacto</a>
-        </div>
+  <script src="https://kit.fontawesome.com/344d15d4e3.js" crossorigin="anonymous"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <footer>
+    <div class="d-flex flex-wrap justify-content-around">
+      <div class="d-flex flex-column custom-foot">
+        <h5>Redes Sociales</h5>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.twitter.com/">Twitter</a>
       </div>
-    </footer>
-  </body>
+      <div class="d-flex flex-column text-center custom-foot">
+        <address>
+          <h5>Oficina Central</h5>
+          <p>Tucuman 834, CABA, Argentina</p>
+          <p>+54 9 11 4628-5925</p>
+          <p>contacto@guiahoteles.com</p>
+        </address>
+      </div>
+      <div class="d-flex flex-column align-items-end custom-foot">
+        <a href="#">Quienes Somos</a>
+        <a href="#">Precios</a>
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+  </footer>
+</body>
 
-  </html>
-  
+</html>
