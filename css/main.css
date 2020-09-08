@@ -49,6 +49,14 @@ p, .custom-border  {
   font-style: italic;
 }
 
+.oi, .fab {
+  margin-right: 5px;
+}
+
+.fab {
+  color: darkslategrey;
+}
+
 .custom-foot {
   padding-bottom: 20px;
 }
