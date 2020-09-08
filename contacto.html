@@ -31,6 +31,9 @@
         <li class="nav-item">
           <a class="nav-link" href="precios.html">Precios</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </li>
         <li class="nav-item active">
           <a class="nav-link" href="contacto.html">Contacto</a>
         </li>
@@ -40,16 +43,7 @@
       </ul>
     </div>
   </nav>
-  <div class="jumbotron">
-    <h1 class="display-4">Guía de Hoteles</h1>
-    <p class="lead">
-      Encuentra las mejores habitaciones en exoticos lugares al mejor precio
-    </p>
-    <hr class="my-4" />
-    <p>Buscá una ciudad, hotel o hasta un lugar famoso</p>
-    <a class="btn btn-warning btn-lg" href="#" role="button">Empezar</a>
-  </div>
-
+  
   <div class="album py-5 bg-light">
 
     <div class="container">
@@ -60,24 +54,50 @@
         </ol>
       </nav>
 
-      <h4>Dejanos tu comentario!</h4>
+      <h4>Dejanos tu comentario</h4>
 
+      <div class="float-right col-sm-6 border custom-border">
+        <p>
+          Recuerda consultar nuestra sección de <a href="ayuda.html">Ayuda</a> online antes de enviarnos tus comentarios.
+        </p>
+        <p>
+          Nosotros buscamos las mejores ofertas de viajes en más de 20 idiomas, y nuestros especialistas estarán encantados de recibir tus comentarios.
+        </p>
+      </div>
       <form class="col-sm-6">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre completo">
+        </div>
         <div class="form-group">
           <label for="mail">Correo Electrónico</label>
           <input type="email" class="form-control" id="mail" placeholder="nombre@email.com">
         </div>
         <div class="form-group">
-          <label for="nombre">Nombre Completo</label>
-          <input type="text" id="nombre" class="form-control">
-        </div>
-        <div class="form-group">
           <label for="asunto">Asunto</label>
-          <input type="text" id="asunto" class="form-control">
+          <select class="form-control" id="asunto">
+            <option value="booking problem">Tengo una pregunta acerca de una reserva</option>
+            <option value="price inaccuracy">Encontré un error en el precio</option>
+            <option value="My Trips">Tengo una pregunta sobre un viaje</option>
+            <option value="Add Hotel">Quiero añadir/editar mi hotel o propiedad</option>
+            <option value="Buy ad">Quiero comprar un espacio publicitario</option>
+            <option value="Other" selected>Otro</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="mensaje">Mensaje</label>
           <textarea class="form-control" id="mensaje" rows="3" placeholder="Dejanos tus comentarios"></textarea>
+        </div>
+          <div class="form-group">
+            <label for="captura-pantalla">Captura de pantalla (opcional)</label>
+            <input type="file" class="form-control-file" id="captura-pantalla">
+            <p class="custom-description">Se permiten archivos que no superen los 5 MB cada uno. Total permitido: 20 MB. Formatos aceptados: jpeg, jpg, png, gif, bmp.</p>
+          </div>
+        <div class="form-check" id="check-contacto-mail">
+          <input class="form-check-input" type="checkbox" value="" id="contacto-mail">
+          <label class="form-check-label" for="contacto-mail">
+            Deseo que me contacten vía mail
+          </label>
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
@@ -108,10 +128,11 @@
         </address>
       </div>
       <div class="d-flex flex-column align-items-end custom-foot">
-        <a href="#">Quienes Somos</a>
-        <a href="#">Precios</a>
+        <a href="about.html">Quienes Somos</a>
+        <a href="precios.html">Precios</a>
+        <a href="ayuda.html">Ayuda</a>
         <a href="#">Términos y Condiciones</a>
-        <a href="#">Contacto</a>
+        <a href="contacto.html">Contacto</a>
       </div>
     </div>
   </footer>
