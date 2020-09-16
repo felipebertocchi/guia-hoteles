@@ -49,6 +49,14 @@ p, .custom-border  {
   font-style: italic;
 }
 
+.tab-content {
+  padding-top: 10px;
+}
+
+.oi-star {
+  color: gold;
+}
+
 .oi, .fab {
   margin-right: 5px;
 }
