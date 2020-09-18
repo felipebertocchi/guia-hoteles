@@ -69,6 +69,36 @@ p, .custom-border  {
   padding-bottom: 20px;
 }
 
+.btn-link:hover {
+  color: skyblue;
+  text-decoration: none;
+}
+
+#tarjetaV {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url("../images/tarjetaVIP.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+}
+#tarjetaG {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url("../images/tarjetaGold.jpg");
+  background-size: cover;
+  background-position-y: 25%;
+}
+#tarjetaD {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url("../images/tarjetaDiamond.jpg");
+  background-size: cover;
+  background-position-y: 15%;
+}
+
+span.badge {
+  margin-left: 8px;
+}
+
+.header-tarjeta {
+  color: white;
+  font-size: 24px;
+}
+
 footer {
   background: rgb(192,242,242);
   background: -moz-linear-gradient(36deg, rgba(192,242,242,1) 0%, rgba(225,212,255,1) 100%);
