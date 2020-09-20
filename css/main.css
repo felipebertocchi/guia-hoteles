@@ -13,7 +13,7 @@ body {
   background: linear-gradient(36deg, rgba(174,238,206,1) 0%, rgba(148,187,233,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aeeece",endColorstr="#94bbe9",GradientType=1); */
 
-  background-image: url(https://eventcampaign.com.au/conference/wp-content/uploads/2017/10/hotel-rooms-banner.jpg);
+  background-image: url("../images/jumbotron-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 15% 50%;

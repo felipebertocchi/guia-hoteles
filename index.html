@@ -265,6 +265,62 @@
 
     </div>
 
+
+    <div class="container">
+      <p>
+        Te interesa recibir ofertas sobre viajes y habitaciones? Suscríbete a nuestro newsletter
+      </p>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalSubscribe">
+        Suscribete aqui
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalSubscribe" tabindex="-1" aria-labelledby="modalSubscribeLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <h5 class="modal-title" id="newsletter-subscribe">Suscripción al newsletter</h5>
+              <p>Dejanos tus datos para enterarte de nuestras novedades, recibir ofertas y participar de concursos.</p>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido">
+              </div>
+              <div class="form-group">
+                <label for="mail-suscripcion">Correo Electrónico</label>
+                <input type="email" class="form-control" id="mail-suscripcion" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="frecuencia-contacto">Deseo recibir noticias y ofertas:</label>
+                <select class="form-control" id="frecuencia-contacto">
+                  <option>Todos los días</option>
+                  <option>Cada 3 días</option>
+                  <option>Una vez al mes</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 
   <script src="https://kit.fontawesome.com/344d15d4e3.js" crossorigin="anonymous"></script>
