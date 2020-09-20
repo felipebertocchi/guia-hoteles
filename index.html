@@ -49,20 +49,21 @@
     <p class="lead">
       Encuentra las mejores habitaciones en exoticos lugares al mejor precio
     </p>
-    <hr class="my-4 col-sm-4 divider"/>
+    <hr class="my-4 col-sm-4 divider" />
     <p id="custom-id">Buscá una ciudad, hotel o hasta un lugar famoso</p>
     <a class="btn btn-warning btn-lg" href="#hotel-gallery" role="button">Empezar</a>
   </div>
 
   <div class="album py-5 bg-light">
 
-    <div class="container" id="hotel-gallery">
+    <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item active">Home</li>
         </ol>
       </nav>
 
+  
       <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>¡Nuevos destinos!</strong> Revisa debajo para conocer donde puedes hospedarte
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -70,47 +71,93 @@
         </button>
       </div>
 
-
-      <div>
-        <div class="d-flex justify-content-around">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapse1" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo reservar?</button>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapse3" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://ancref.org/wp-content/uploads/2019/01/iliomarepool_d1c4216_cropper-720x300.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Hotel y Resort en Bélice</h5>
+              <p>Un nuevo lugar para pasar tus próximas vacaciones!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.cadenadial.com/wp-content/uploads/2014/11/Hotel-Nueva-York-720x300.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bares y restaurantes</h5>
+              <p>Disfrutá de promociones de hasta un 50 % de descuento</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.ruimzicht.com/wp-content/uploads/2016/04/Ruimzicht-zeddam-edwinvandegraaf-fotografie-web-3-van-64-720x300.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Las mejores habitaciones de lujo</h5>
+              <p>sólo a unos clic de distancia</p>
+            </div>
+          </div>
         </div>
-        <div class="d-flex row justify-content-around">
-          <div class="col">
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    
+      
+      <div id="hotel-gallery">
+        <div class="d-flex justify-content-around custom-collapse">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapse1"
+            aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapse2"
+            aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo reservar?</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapse3"
+            aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
             <div class="collapse" id="multiCollapse1">
-              <div class="card card-body">
+              <div class="card card-body custom-collapse">
                 <h3>¿Cómo funciona?</h3>
                 <p>
-                  Elegí un hotel debajo, hace clic en <strong>Ver más</strong> o sino en <strong>Reservar</strong> y seguí los pasos!
+                  Elegí un hotel debajo, hace clic en <strong>Ver más</strong> o sino en <strong>Reservar</strong> y
+                  seguí los pasos!
                 </p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-xs-12 col-md-4">
             <div class="collapse" id="multiCollapse2">
-              <div class="card card-body">
+              <div class="card card-body custom-collapse">
                 <h3>¿Dónde puedo reservar?</h3>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                  Puedes hacerlo desde esta misma página, selecciona un hotel o localidad debajo y haz clic en <strong>Reservar</strong>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-xs-12 col-md-4">
             <div class="collapse" id="multiCollapse3">
-              <div class="card card-body">
+              <div class="card card-body custom-collapse">
                 <h3>¿Cómo pago?</h3>
                 <p>
-                  Aceptamos tarjetas de American Express, Cabal, Visa y MasterCard. También podes abonar por MercadoPago o BruBank.
+                  Aceptamos tarjetas de American Express, Cabal, Visa y MasterCard. También podes abonar por MercadoPago
+                  o BruBank.
                 </p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
+
+      <h2>Nuestra selección de Hoteles</h2>
 
       <div class="d-flex flex-wrap">
         <div class="card-hotel">
@@ -119,7 +166,7 @@
               src="https://thumbnails.trvl-media.com/-gRoTNrDtsf0KmFovp5hjnubQrk=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/17000000/16210000/16208000/16207935/f260cdc8_z.jpg"
               class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title">Hipotels Gran Playa de Palma</h5>
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Tragos gratis en el bar frente a la playa" data-toggle="tooltip" data-placement="top" title="Tragos gratis en el bar frente a la playa">Hipotels Gran Playa de Palma</h5>
               <h6 class="card-subtitle card-hotel-subtitle text-muted">Palma de Mallorca, España</h6>
               <p class="card-text text-justify">Ubicado en Palma de Mallorca, Hipotels Gran Playa de Palma se encuentra
                 a un breve trayecto conduciendo del Palma Aquarium, así como de la bahía de Palma. También cuenta con
@@ -143,7 +190,7 @@
               src="https://media.radissonhotels.net/image/radisson-blu-hotel-reussen-andermatt/poolindoor/16256-117386-f64636672_3xl.jpg?impolicy=SecondGalleryImg"
               class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title">Radisson Blu Hotel Reussen</h5>              
+              <h5 class="card-title" data-toggle="tooltip" data-placement="bottom" title="Lecciones de Ski gratis">Radisson Blu Hotel Reussen</h5>
               <h6 class="card-subtitle card-hotel-subtitle text-muted">Andermatt, Suiza</h6>
               <p class="card-text text-justify">El Radisson Blu Hotel Reussen está ubicado en Andermatt, a 1,1 km
                 del puente del Diablo, y ofrece alojamiento, restaurante,
@@ -166,7 +213,7 @@
           <div class="card mb-4 shadow-sm">
             <img src="https://cf.bstatic.com/images/hotel/max1280x900/167/167869878.jpg" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title">Copenhagen Island Hotel</h5>              
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Viaje de trekking incluido">Copenhagen Island Hotel</h5>
               <h6 class="card-subtitle card-hotel-subtitle text-muted">København, Dinamarca</h6>
               <p class="card-text text-justify">Este hotel, moderno y elegante, está en una isla artificial del
                 centro de Copenhague, al lado del centro comercial Fisketorvet.
@@ -191,7 +238,7 @@
               src="https://images.trvl-media.com/hotels/1000000/20000/15300/15237/0f02afd9.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
               class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title">Luxor Hotel and Casino</h5>              
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Cena gratis en el casino">Luxor Hotel and Casino</h5>
               <h6 class="card-subtitle card-hotel-subtitle text-muted">Las Vegas, Nevada, Estados Unidos</h6>
               <p class="card-text text-justify">El Luxor, famoso por su emblemática forma piramidal, está situado en la
                 zona del Strip de Las Vegas y ofrece entretenimiento en directo y un casino. Ofrece un spa de servicio
@@ -216,10 +263,11 @@
               src="https://images.trvl-media.com/hotels/19000000/18730000/18723300/18723252/0c77d9d8.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
               class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title">San Francisco Proper Hotel</h5>              
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Recorridos gratis por la ciudad">San Francisco Proper Hotel</h5>
               <h6 class="card-subtitle card-hotel-subtitle text-muted">California, Estados Unidos</h6>
               <p class="card-text text-justify">Además de un restaurante, este hotel para no fumadores cuenta con 2
-                bares o salas y un gimnasio abierto las 24 horas. La conexión wifi en las zonas comunes es gratuita. Otras
+                bares o salas y un gimnasio abierto las 24 horas. La conexión wifi en las zonas comunes es gratuita.
+                Otras
                 instalaciones incluyen una terraza en la azotea, aparcamiento con asistencia y servicio de habitaciones
                 las 24 horas.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -242,7 +290,7 @@
               src="https://images.trvl-media.com/hotels/1000000/10000/2800/2722/18823162.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
               class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title">Apollo Hotel Amsterdam</h5>              
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Tragos gratis en los bares de la ciudad">Apollo Hotel Amsterdam</h5>
               <h6 class="card-subtitle card-hotel-subtitle text-muted">Amsterdam, Países Bajos</h6>
               <p class="card-text text-justify">Se encuentra en Ámsterdam, en la zona de Ámsterdam Sur, que está en el
                 centro y a orillas del agua. Además de visitar lugares emblemáticos como Plaza de los Museos y Plaza
@@ -323,11 +371,6 @@
 
   </div>
 
-  <script src="https://kit.fontawesome.com/344d15d4e3.js" crossorigin="anonymous"></script>
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
   <footer>
     <div class="d-flex flex-wrap justify-content-around">
       <div class="d-flex flex-column custom-foot">
@@ -352,6 +395,25 @@
         <a href="contacto.html">Contacto</a>
       </div>
     </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/344d15d4e3.js" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+        $('.carousel').carousel({
+          interval: 5000
+        });
+      });
+    </script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
   </footer>
 </body>
 
