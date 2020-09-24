@@ -1,0 +1,121 @@
+@yellow: #fffb29;
+@red: #e34242;
+@blue: #11a3bd;
+@white: #faffff;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-top: 50px;
+}
+
+.jumbotron {
+  background-image: url("../images/jumbotron-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 15% 50%;
+  margin: 0;
+  padding: 32px;
+}
+
+.marcador {
+  color: @white;
+}
+
+.divider {
+  border-top: 2px solid white;
+  float: left;
+}
+
+#custom-id {
+  clear: both;
+}
+
+.card-hotel {
+  flex: 1 350px;
+  padding: 10px 20px;
+}
+
+.card-hotel-subtitle, #check-contacto-mail {
+  padding-bottom: 10px;
+}
+
+p, .custom-border  {
+  margin: 16px 0;
+}
+
+.custom-description {
+  padding-top: 5px;
+  font-size: small;
+  font-style: italic;
+}
+
+.tab-content {
+  padding-top: 10px;
+}
+
+.oi-star {
+  color: gold;
+}
+
+.oi, .fab {
+  margin-right: 5px;
+}
+
+.fab {
+  color: darkslategrey;
+}
+
+.custom-foot {
+  padding-bottom: 20px;
+}
+
+.btn-link:hover {
+  color: skyblue;
+  text-decoration: none;
+}
+
+.custom-collapse {
+  margin: 16px 0;
+}
+
+.alert {
+  margin-top: 16px;
+}
+
+#tarjetaV {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url("../images/tarjetaVIP.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+}
+#tarjetaG {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url("../images/tarjetaGold.jpg");
+  background-size: cover;
+  background-position-y: 25%;
+}
+#tarjetaD {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url("../images/tarjetaDiamond.jpg");
+  background-size: cover;
+  background-position-y: 15%;
+}
+
+span.badge {
+  margin-left: 8px;
+}
+
+.header-tarjeta {
+  color: white;
+  font-size: 24px;
+}
+
+footer {
+  background: rgb(192,242,242);
+  background: -moz-linear-gradient(36deg, rgba(192,242,242,1) 0%, rgba(225,212,255,1) 100%);
+  background: -webkit-linear-gradient(36deg, rgba(192,242,242,1) 0%, rgba(225,212,255,1) 100%);
+  background: linear-gradient(36deg, rgba(192,242,242,1) 0%, rgba(225,212,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c0f2f2",endColorstr="#e1d4ff",GradientType=1);
+  padding: 25px 20px 0 20px;
+}
