@@ -397,40 +397,12 @@
     </div>
   </footer>
 
-  <!-- build:js dist/index.js -->
+  <!-- build:js js/main.js -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/344d15d4e3.js" crossorigin="anonymous"></script>
-  <script>
-    $(function () {
-      // $('[data-toggle="tooltip"]').tooltip();
-      // $('[data-toggle="popover"]').popover();
-      $('.carousel').carousel({
-        interval: 5000
-      });
-      $('#modalSubscribe').on('show.bs.modal', function (e) {
-        console.log("el modal se está mostrando");
-        $("#modalSubscribeBtn").removeClass("btn-outline-primary").addClass("btn-secondary").prop("disabled",
-          true).css({
-          opacity: 0.25
-        });
-      });
-      $('#modalSubscribe').on('shown.bs.modal', function (e) {
-        console.log("el modal se terminó de abrir");
-      });
-      $('#modalSubscribe').on('hide.bs.modal', function (e) {
-        console.log("el modal se está ocultando");
-      });
-      $('#modalSubscribe').on('hidden.bs.modal', function (e) {
-        console.log("el modal se terminó de ocultar");
-        $("#modalSubscribeBtn").prop("disabled", false).removeClass("btn-secondary").addClass(
-          "btn-outline-primary").css({
-          opacity: 1
-        });
-      });
-    });
-  </script>
+  <script src="js/index.js"></script>
   <!-- endbuild -->
 </body>
 

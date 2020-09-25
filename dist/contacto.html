@@ -1,1 +1,145 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel="stylesheet" href="dist/contacto.css"><title>Guia de Hoteles</title></head><body><nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"><a href="index.html" class="navbar-brand href">Guía Hoteles</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li><li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li><li class="nav-item"><a class="nav-link" href="ayuda.html">Ayuda</a></li><li class="nav-item active"><a class="nav-link" href="contacto.html">Contacto</a></li><li class="nav-item"><a class="nav-link disabled" href="#">Términos y Condiciones</a></li></ul></div></nav><div class="album py-5 bg-light"><div class="container"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active" aria-current="page">Contacto</li></ol></nav><h4>Dejanos tu comentario</h4><div class="float-right col-sm-6 border custom-border"><p>Recuerda consultar nuestra sección de <a href="ayuda.html">Ayuda</a> online antes de enviarnos tus comentarios.</p><p>Nosotros buscamos las mejores ofertas de viajes en más de 20 idiomas, y nuestros especialistas estarán encantados de recibir tus comentarios.</p></div><form class="col-sm-6"><div class="form-group"><label for="nombre">Nombre Completo</label> <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre completo"></div><div class="form-group"><label for="mail">Correo Electrónico</label> <input type="email" class="form-control" id="mail" placeholder="nombre@email.com"></div><div class="form-group"><label for="asunto">Asunto</label> <select class="form-control" id="asunto"><option value="booking problem">Tengo una pregunta acerca de una reserva</option><option value="price inaccuracy">Encontré un error en el precio</option><option value="My Trips">Tengo una pregunta sobre un viaje</option><option value="Add Hotel">Quiero añadir/editar mi hotel o propiedad</option><option value="Buy ad">Quiero comprar un espacio publicitario</option><option value="Other" selected="selected">Otro</option></select></div><div class="form-group"><label for="mensaje">Mensaje</label> <textarea class="form-control" id="mensaje" rows="3" placeholder="Dejanos tus comentarios"></textarea></div><div class="form-group"><label for="captura-pantalla">Captura de pantalla (opcional)</label> <input type="file" class="form-control-file" id="captura-pantalla"><p class="custom-description">Se permiten archivos que no superen los 5 MB cada uno. Total permitido: 20 MB. Formatos aceptados: jpeg, jpg, png, gif, bmp.</p></div><div class="form-check" id="check-contacto-mail"><input class="form-check-input" type="checkbox" id="contacto-mail"> <label class="form-check-label" for="contacto-mail">Deseo que me contacten vía mail</label></div><button type="submit" class="btn btn-primary">Enviar</button></form></div></div><script src="dist/contacto.js"></script><footer><div class="d-flex flex-wrap justify-content-around"><div class="d-flex flex-column custom-foot"><h5>Redes Sociales</h5><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i>Facebook</a> <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a> <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i>Twitter</a></div><div class="d-flex flex-column text-center custom-foot"><address><h5>Oficina Central</h5><p><span class="oi oi-home"></span>Tucuman 834, CABA, Argentina</p><p><span class="oi oi-phone"></span>+54 9 11 4628-5925</p><p><span class="oi oi-inbox"></span>contacto@guiahoteles.com</p></address></div><div class="d-flex flex-column align-items-end custom-foot"><a href="about.html">Quienes Somos</a> <a href="precios.html">Precios</a> <a href="ayuda.html">Ayuda</a> <a href="#">Términos y Condiciones</a> <a href="contacto.html">Contacto</a></div></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- build:css dist/contacto.css -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- endbuild -->
+
+  <title>Guia de Hoteles</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a href="index.html" class="navbar-brand href">Guía Hoteles</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="precios.html">Precios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Términos y Condiciones</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="album py-5 bg-light">
+
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>
+      </nav>
+
+      <h4>Dejanos tu comentario</h4>
+
+      <div class="float-right col-sm-6 border custom-border">
+        <p>
+          Recuerda consultar nuestra sección de <a href="ayuda.html">Ayuda</a> online antes de enviarnos tus comentarios.
+        </p>
+        <p>
+          Nosotros buscamos las mejores ofertas de viajes en más de 20 idiomas, y nuestros especialistas estarán encantados de recibir tus comentarios.
+        </p>
+      </div>
+      <form class="col-sm-6">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre completo">
+        </div>
+        <div class="form-group">
+          <label for="mail">Correo Electrónico</label>
+          <input type="email" class="form-control" id="mail" placeholder="nombre@email.com">
+        </div>
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <select class="form-control" id="asunto">
+            <option value="booking problem">Tengo una pregunta acerca de una reserva</option>
+            <option value="price inaccuracy">Encontré un error en el precio</option>
+            <option value="My Trips">Tengo una pregunta sobre un viaje</option>
+            <option value="Add Hotel">Quiero añadir/editar mi hotel o propiedad</option>
+            <option value="Buy ad">Quiero comprar un espacio publicitario</option>
+            <option value="Other" selected>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3" placeholder="Dejanos tus comentarios"></textarea>
+        </div>
+          <div class="form-group">
+            <label for="captura-pantalla">Captura de pantalla (opcional)</label>
+            <input type="file" class="form-control-file" id="captura-pantalla">
+            <p class="custom-description">Se permiten archivos que no superen los 5 MB cada uno. Total permitido: 20 MB. Formatos aceptados: jpeg, jpg, png, gif, bmp.</p>
+          </div>
+        <div class="form-check" id="check-contacto-mail">
+          <input class="form-check-input" type="checkbox" value="" id="contacto-mail">
+          <label class="form-check-label" for="contacto-mail">
+            Deseo que me contacten vía mail
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+
+    </div>
+  </div>
+
+  <!-- build:js dist/contacto.js -->
+  <script src="https://kit.fontawesome.com/344d15d4e3.js" crossorigin="anonymous"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- endbuild -->
+
+  <footer>
+    <div class="d-flex flex-wrap justify-content-around">
+      <div class="d-flex flex-column custom-foot">
+        <h5>Redes Sociales</h5>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i>Facebook</a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
+        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i>Twitter</a>
+      </div>
+      <div class="d-flex flex-column text-center custom-foot">
+        <address>
+          <h5>Oficina Central</h5>
+          <p><span class="oi oi-home"></span>Tucuman 834, CABA, Argentina</p>
+          <p><span class="oi oi-phone"></span>+54 9 11 4628-5925</p>
+          <p><span class="oi oi-inbox"></span>contacto@guiahoteles.com</p>
+        </address>
+      </div>
+      <div class="d-flex flex-column align-items-end custom-foot">
+        <a href="about.html">Quienes Somos</a>
+        <a href="precios.html">Precios</a>
+        <a href="ayuda.html">Ayuda</a>
+        <a href="#">Términos y Condiciones</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
